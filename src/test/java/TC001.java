@@ -12,6 +12,7 @@ public void test01(){
       allPages.mainPage().hoverOverGirisYapButon();
       allPages.loginPage().loginHepsiBurada(ConfigReader.getProperty("UserMail"),ConfigReader.getProperty("UserPassword"));
       allPages.userDashboardPage().verifyValidLogin("test");
+      allPages.userDashboardPage().searchProduct("robot süpürge");
 
 
 }
