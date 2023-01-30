@@ -1,0 +1,3 @@
+2023-01-30 15:57:15,920 INFO i.g.b.w.WebDriverManager [main] Using geckodriver 0.32.0 (resolved driver for Firefox 108)
+2023-01-30 15:57:15,965 INFO i.g.b.w.WebDriverManager [main] Exporting webdriver.gecko.driver as C:\Users\PC\.cache\selenium\geckodriver\win64\0.32.0\geckodriver.exe
+2023-01-30 15:57:50,901 INFO P.MainPage [main] User go to http://www.hepsiburada.com/
