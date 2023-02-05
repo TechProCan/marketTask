@@ -1,3 +1,0 @@
-2023-01-30 15:56:06,178 INFO P.MainPage [main] User send to ecan3115@gmail.com
-2023-01-30 15:56:06,388 INFO P.MainPage [main] User click to Login Button after send to UserEmail
-2023-01-30 15:56:52,921 ERROR B.BaseStepMethod [main] Web element not found in document!

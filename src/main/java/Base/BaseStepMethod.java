@@ -2,6 +2,8 @@ package Base;
 
 import Utilities.ConfigReader;
 
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -339,5 +341,27 @@ public class BaseStepMethod {
             return null;
         }
     }
+    protected void csvWriter(By locator) throws IOException {
+        String csv = "C:\\Users\\PC\\IdeaProjects\\MarketTask\\productTitle.csv";
+        FileWriter fr=new FileWriter(csv);
+        BufferedWriter br=new BufferedWriter(fr);
+        br.write(getTextElement(locator));
+        br.close();
+    }
+    public String csvReader() throws IOException, CsvException {
+        CSVReader reader = new CSVReader(new FileReader("C:\\Users\\PC\\IdeaProjects\\MarketTask\\productTitle.csv"));
+        String[] csvCell;
+
+        while ((csvCell=reader.readNext())!=null){
+            titleCSV=csvCell[0];
+
+        }
+        return titleCSV;
+
+    }
+    public void go_To_HepsiBuradaSepetim(){
+        driver.navigate().to(ConfigReader.getProperty("sepetimURL"));
+    }
+
 
 }
